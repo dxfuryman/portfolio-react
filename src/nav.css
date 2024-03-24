@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color:rgba(255,255,255,.25);
+    text-align: center;
+    margin: 0
+}
+.btn-nav{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    align-items: center;
+}
+.btn{
+    background-color: transparent;
+    color: #bcbcb6;
+    border: none;
+    cursor: pointer;
+
+}
+.btn2{
+border-radius: 20% 20% 0% 20%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+ cursor: pointer;
+
+}
+.btn:hover{
+    color: #ffffff;
+}
+.btn2 h2{
+font-size: medium;
+}
+
+.btn-nav h2{
+    padding: 20px;
+}
+.btn-nav-main{
+    display: flex;
+
+}
+p {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 3%;
+    left: 2%; /* Place it at the left edge of the viewport */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#name{
+    /*font-size: 10px;*/
+    justify-content: start;
+    align-items: start;
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0;
+    font-size: xxx-large;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+    /* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}

@@ -1,0 +1,19 @@
+.body{
+}
+.header {
+  display: flex; /* Make it a flex container */
+  justify-content: space-between; /* Distribute items with space */
+  align-items: flex-start; /* Align items to the top */
+}
+.profile{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 27%;
+  border-radius: 50%;
+}
+.profile img{
+  height: 300px;
+  border-radius: 50%;
+}
