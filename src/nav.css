@@ -51,6 +51,10 @@ p {
     align-items: flex-start;
     justify-content: flex-start;
 }
+.likeText{
+    color: #DEEBF8;
+}
+
 
 #name{
     /*font-size: 10px;*/
