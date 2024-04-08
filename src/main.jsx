@@ -1,33 +1,51 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import {useState} from "react";
-import './index.css'
-import {Navbar, Navbar2} from "./nav.jsx";
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom/client';  // Updated import
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
+import { Navbar, Navbar2 } from "./nav.jsx";
 import ProfileImage from "./assets/profile.jpg";
 import HeartImg from "./assets/heart.png";
+import {About} from './About';
+import {Contact} from './Contact.jsx';
+import Home from './Home';
 
-function Main()  {
+function Main() {
     const [likes, setLikes] = useState(0);
+
     const counter = () => {
-        setLikes(likes+1);
-    }
-    return(
-    <>
-        <div className={"header"}>
-            <Navbar />
-            <Navbar2 />
-        </div>
+        setLikes(prevLikes => prevLikes + 1);
+    };
 
-        <div className={"profile"}>
-            <img src={ProfileImage} alt={"My profile picture"}/>
+    return (
+        <>
+            <div className="header">
+                <Navbar />
+                <Navbar2 />
+            </div>
 
-        </div>
-        <div className={"like"}>
-            <button onClick={counter}><img src={HeartImg}/></button>
-            <p className={"likeText"}><strong>Likes {likes}</strong></p>
-        </div>
 
-    </>
-    )
+
+            <div className="like">
+                <button onClick={counter}><img src={HeartImg}  /></button>
+                <p className="likeText"><strong>Likes {likes}</strong></p>
+            </div>
+        </>
+    );
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<Main/>)
+
+function App() {
+    return (
+        <Router>
+            <Main /> {/* Render the Main component with its content */}
+
+            <Routes>
+                <Route path="/" element={<Home />} /> // Using the Home component
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

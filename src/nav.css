@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap');
+
 body {
     display: flex;
     font: 400 1em/1.5 "Neuton";
@@ -9,7 +11,7 @@ body {
 .btn-nav{
     display: flex;
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 3%;
     align-items: center;
 }
@@ -18,16 +20,28 @@ body {
     color: #bcbcb6;
     border: none;
     cursor: pointer;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
+.special{
+    margin-left: 30px;
+}
 .btn2{
-border-radius: 20% 20% 0% 20%;
+    background-color: white;
+border-radius: 20% 20% 0 20%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 166px;
  cursor: pointer;
+    color: #090d00;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 .btn:hover{
@@ -86,9 +100,6 @@ p {
 
 
 }
-
-/* Animate Background Image */
-
 @-webkit-keyframes aitf {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }

@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .body{
 }
 .header {
@@ -19,7 +23,7 @@
   border-radius: 50%;
 }
 .like {
-  display: flex;
+  display:none;  /*ye maine bus kuch time ke liye hide kiya hai likes counter app hai ye */
   width: 110px;
   /*height: 1px;*/
   position: absolute;
@@ -57,5 +61,26 @@
   border-right: none;
   cursor: pointer;
 }
+.home-container {
+  text-align: center;  /* Center content horizontally */
+  min-height: 100vh;   /* Make container take full viewport height */
+  display: flex;       /* Use flexbox for centering */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center vertically */
+  position: relative;
+}
 
+.home-title {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-left: 50px;
+  position: relative;
 
+  /* Add more styles as desired */
+}
+#FD{
+  color: orange;
+}
