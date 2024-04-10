@@ -8,6 +8,7 @@ import HeartImg from "./assets/heart.png";
 import {About} from './About';
 import {Contact} from './Contact.jsx';
 import Home from './Home';
+import {Portfolio} from "./projects/Portfolio.jsx";
 
 function Main() {
     const [likes, setLikes] = useState(0);
@@ -41,7 +42,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} /> // Using the Home component
                 <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/contact" element={<Portfolio />} />
             </Routes>
         </Router>
     );
