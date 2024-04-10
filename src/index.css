@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.body{
-}
 .header {
   display: flex; /* Make it a flex container */
   justify-content: space-between; /* Distribute items with space */
@@ -98,4 +98,67 @@
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal
+}
+#ttl{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 120px;
+  /*margin-left: 750px;*/
+  align-items: center;
+  /*top:0%;*/
+  width: 100%;
+  height: 120px;
+  /*left: 190%;*/
+  font-size: 60px;
+  color: white;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;      /* Adjust spacing from navbar */
+}
+
+.pj-wrap {
+  display: inline-grid;  /* Create an inline grid */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  column-gap: 100px;
+  row-gap: 170px;
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.pj-wrap button {
+  height: 570px;
+  background-color: transparent;
+  width: 900px;
+  border: none;
+  box-shadow: 2px 2px 6px rgba(0,0,0, 0.3);
+  padding: 20px;
+  text-align: left;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 600px) {
+  .pj-wrap {
+    grid-template-columns: 1fr;  /* Stack buttons on smaller screens */
+  }
+}
+.pj-wrap button:hover{
+ border: 2px solid white;
+  color: white;
+}
+.pj-wrap button label{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin-left: 30%;
 }

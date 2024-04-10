@@ -9,6 +9,7 @@ import {About} from './About';
 import {Contact} from './Contact.jsx';
 import Home from './Home';
 import {Portfolio} from "./projects/Portfolio.jsx";
+// import './projects/Portfolio.css'
 
 function Main() {
     const [likes, setLikes] = useState(0);
