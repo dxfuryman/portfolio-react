@@ -14,14 +14,14 @@
 .profile{
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 35%;
-  top: 27%;
-  border-radius: 50%;
+  /*position: absolute;*/
+  right: 0;
+  top: 10%;
+  position: fixed;
 }
 .profile img{
-  height: 300px;
-  border-radius: 50%;
+  height: 850px;
+  /*border-radius: 50%;*/
 }
 .like {
   display:none;  /*ye maine bus kuch time ke liye hide kiya hai likes counter app hai ye */

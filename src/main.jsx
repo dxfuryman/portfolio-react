@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';  // Updated import
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import { Navbar, Navbar2 } from "./nav.jsx";
-import ProfileImage from "./assets/profile.jpg";
+import ProfileImage from "./assets/profile.png";
 import HeartImg from "./assets/heart.png";
 import {About} from './About';
 import {Contact} from './Contact.jsx';
