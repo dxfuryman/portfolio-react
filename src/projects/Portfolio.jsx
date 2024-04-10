@@ -11,20 +11,26 @@ export const Portfolio = () => {
                 <h1 id="ttl">My Projects</h1>
                 <div className="pj-wrap">
                    <button id={"btn-1"}>
-                       <img src={prj4}/>
+                       <a href="https://currency-converter-rho-one.vercel.app/" target={"_blank"}><img src={prj4}/></a>
                    <label>Currency Converter</label>
                    </button>
                     <button id={"btn-2"}>
-                        <img src={prj2}/>
+                        <a href={"https://vikhyatsingh123.github.io/Naruto-Shippuden/"} target={"_blank"}>
+                            <img src={prj2}/>
+                        </a>
                         <label>Anime Fansite</label>
-                        <a href={"https://currency-converter-rho-one.vercel.app/"}></a>
+
                     </button>
                     <button id={"btn-3"}>
-                        <img src={prj3}/>
+                        <a href={"https://pass-word-generator-eight.vercel.app/"} target={"_blank"}>
+                            <img src={prj3}/>
+                        </a>
                         <label>Password Generator</label>
                     </button>
                     <button id={"btn-4"}>
-                        <img src={prj1}/>
+                        <a href={"https://dxfuryman.github.io/new-portfolio2/"} target={"_blank"}>
+                            <img src={prj1}/>
+                        </a>
                         <label>Personal Portfolio (OlD)</label>
                     </button>
                     {/* Add more buttons as needed */}
@@ -33,3 +39,4 @@ export const Portfolio = () => {
         </>
     )
 }
+

@@ -69,6 +69,7 @@
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center vertically */
   position: relative;
+  top: -20%;
 }
 #FD:hover{
   font-family: "Lilita One", sans-serif;
@@ -154,6 +155,7 @@
 .pj-wrap button:hover{
  border: 2px solid white;
   color: white;
+  letter-spacing: 4px;
 }
 .pj-wrap button label{
   font-family: "Permanent Marker", cursive;
@@ -161,4 +163,5 @@
   font-style: normal;
   font-size: 30px;
   margin-left: 30%;
+
 }
