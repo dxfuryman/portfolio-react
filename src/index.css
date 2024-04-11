@@ -6,6 +6,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .header {
   display: flex; /* Make it a flex container */
   justify-content: space-between; /* Distribute items with space */
