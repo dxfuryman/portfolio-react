@@ -21,8 +21,10 @@ function Navbar2() {
                 </nav>
             </div>
             <div className="special">
-                <button className="btn2"><h2>Let's Discuss</h2></button>
+
+                <button className="btn2"><h2>Hire me </h2></button>
             </div>
+
         </div>
     );
 }
