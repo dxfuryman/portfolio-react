@@ -3,6 +3,7 @@ import prj1 from "./ProjectSnapshots/img_1.png"
 import prj2 from "./ProjectSnapshots/img_2.png"
 import prj3 from "./ProjectSnapshots/img_3.png"
 import prj4 from "./ProjectSnapshots/img_4.png"
+import prj5 from "./ProjectSnapshots/img_6.png"
 
 export const Portfolio = () => {
     return (
@@ -11,8 +12,8 @@ export const Portfolio = () => {
                 <h1 id="ttl">My Projects</h1>
                 <div className="pj-wrap">
                    <button id={"btn-1"}>
-                       <a href="https://currency-converter-rho-one.vercel.app/" target={"_blank"}><img src={prj4}/></a>
-                   <label>Currency Converter</label>
+                       <a href="https://react-router-five-orpin.vercel.app/" target={"_blank"}><img src={prj5}/></a>
+                   <label>Community Website</label>
                    </button>
                     <button id={"btn-2"}>
                         <a href={"https://vikhyatsingh123.github.io/Naruto-Shippuden/"} target={"_blank"}>
@@ -32,6 +33,14 @@ export const Portfolio = () => {
                             <img src={prj1}/>
                         </a>
                         <label>Personal Portfolio (OlD)</label>
+                    </button>
+                    <button id={"btn-1"}>
+                        <a href="https://currency-converter-rho-one.vercel.app/" target={"_blank"}><img src={prj4}/></a>
+                        <label>Currency Converter</label>
+                    </button>
+                    <button id={"btn-1"}>
+                        <a href="https://currency-converter-rho-one.vercel.app/" target={"_blank"}><img src={prj4}/></a>
+                        <label>Currency Converter</label>
                     </button>
                     {/* Add more buttons as needed */}
                 </div>
