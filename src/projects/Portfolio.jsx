@@ -4,6 +4,7 @@ import prj2 from "./ProjectSnapshots/img_2.png"
 import prj3 from "./ProjectSnapshots/img_3.png"
 import prj4 from "./ProjectSnapshots/img_4.png"
 import prj5 from "./ProjectSnapshots/img_6.png"
+import prj6 from "./ProjectSnapshots/img.png"
 
 export const Portfolio = () => {
     return (
@@ -39,8 +40,8 @@ export const Portfolio = () => {
                         <label>Currency Converter</label>
                     </button>
                     <button id={"btn-1"}>
-                        <a href="https://currency-converter-rho-one.vercel.app/" target={"_blank"}><img src={prj4}/></a>
-                        <label>Currency Converter</label>
+                        <a href="https://dxfuryman.github.io/simon-game/" target={"_blank"}><img src={prj6}/></a>
+                        <label>Simon Game</label>
                     </button>
                     {/* Add more buttons as needed */}
                 </div>
