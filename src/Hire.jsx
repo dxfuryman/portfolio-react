@@ -30,7 +30,9 @@ export const Hire = () => {
                     </button>
                     </a>
                 </form>
-                <
+                <div>
+                    <p> </p>
+                </div>
             </div>
         </>
     );
