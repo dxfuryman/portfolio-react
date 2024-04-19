@@ -31,7 +31,7 @@ export const Hire = () => {
                     </a>
                 </form>
                 <div>
-                    <p> </p>
+
                 </div>
             </div>
         </>
