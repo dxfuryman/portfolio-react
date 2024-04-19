@@ -20,11 +20,12 @@ function Navbar2() {
                     <Link to="/contact"><button className={"btn"}><h2>Portfolio</h2></button></Link>
                 </nav>
             </div>
+            <nav>
             <div className="special">
+                <Link to="/hire"><button className="btn2"><h2>Hire me </h2></button></Link>
 
-                <button className="btn2"><h2>Hire me </h2></button>
             </div>
-
+            </nav>
         </div>
     );
 }
