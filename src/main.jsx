@@ -9,6 +9,7 @@ import {About} from './About';
 import {Contact} from './Contact.jsx';
 import Home from './Home';
 import {Portfolio} from "./projects/Portfolio.jsx";
+import {Hire} from "./Hire.jsx";
 // import './projects/Portfolio.css'
 
 function Main() {
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/" element={<Home />} /> // Using the Home component
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Portfolio />} />
+                <Route path="/hire" element={<Hire />} />
             </Routes>
         </Router>
     );
