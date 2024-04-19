@@ -166,3 +166,52 @@
   margin-left: 30%;
 
 }
+@media (max-width: 600px) {
+  .profile img {
+    height: 50vh; /* Adjust the image height for mobile view */
+  }
+
+  .home-title {
+    font-size: 30px; /* Adjust the font size for mobile view */
+  }
+
+  .pj-wrap {
+    grid-template-columns: 1fr;  /* Stack buttons on smaller screens */
+    margin-left: 0; /* Remove the left margin on smaller screens */
+  }
+
+  .pj-wrap button {
+    width: 90vw; /* Adjust the button width for mobile view */
+    height: auto; /* Make the button height auto for mobile view */
+  }
+
+  .pj-wrap button label {
+    font-size: 20px; /* Adjust the label font size for mobile view */
+    margin-left: 10%; /* Adjust the label margin for mobile view */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .profile img {
+    height: 70vh; /* Adjust the image height for tablet view */
+  }
+
+  .home-title {
+    font-size: 40px; /* Adjust the font size for tablet view */
+  }
+
+  .pj-wrap {
+    grid-template-columns: 1fr;  /* Stack buttons on tablet screens */
+    margin-left: 5%; /* Adjust the left margin on tablet screens */
+  }
+
+  .pj-wrap button {
+    width: 80vw; /* Adjust the button width for tablet view */
+    height: auto; /* Make the button height auto for tablet view */
+  }
+
+  .pj-wrap button label {
+    font-size: 25px; /* Adjust the label font size for tablet view */
+    margin-left: 15%; /* Adjust the label margin for tablet view */
+  }
+}
