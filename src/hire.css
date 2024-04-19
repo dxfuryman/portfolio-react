@@ -22,13 +22,19 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.con-me h1:hover{
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
 
 .login-box {
     position: absolute;
     top: 60%;
-    right: 10%;
-    width: 400px;
-    height:600px;
+    right: 0;
+    width: 500px;
+    height:700px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
@@ -124,7 +130,47 @@ body {
         left: 100%;
     }
 }
+.info{
+    margin-top: 40px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;  /* Arrange items in a row */
+    justify-content: space-around; /* Distribute space around items */
+    align-items: center; /* Vertically center items */
+    gap: 20px;
+}
+.info-txt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+    color: white;
+}
+.info-txt img{
+    height: 30px;
+    /*margin: 10px;*/
+    /*margin-right: 10px;*/
+}
+.info-txt img:hover{
+    background-color: white;
+}
+.info-txt img:hover{
+    background-color: white;
+}
+.info-svg{
 
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    max-width: 30px;  /* Control icon size  */
+    /* Space between icons */
+    margin-top: 50px;
+    gap: 30px;
+    /*justify-content: space-between;*/
+}
+.info-svg img:hover{
+    background-color: white;
+}
 .login-box a span:nth-child(2) {
     top: -100%;
     right: 0;
