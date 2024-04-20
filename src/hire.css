@@ -28,7 +28,7 @@ body {
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: lightseagreen;
 }
 .login-container {
     display: flex;
@@ -151,8 +151,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 10px;
-    font-size: 15px;
+    gap: 20px;
+    font-size: 26px;
     color: white;
 }
 .info-txt img{
