@@ -12,6 +12,7 @@ export const Hire = () => {
     return (
         <>
             <div className="con-me"><h1>Contact me</h1></div>
+            <div className="login-container">
             <div className="login-box">
                 <form action="https://formspree.io/f/xzbnkobd" method="POST">
                     <div className="user-box">
@@ -49,6 +50,7 @@ export const Hire = () => {
                         <img src={InstagramIcon} alt="Instagram Icon" />
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );

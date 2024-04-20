@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';  // Updated import
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
-import { Navbar, Navbar2 } from "./nav.jsx";
+import { Navbar , Navbar2 } from "./nav.jsx"; // Import Navbar
 import ProfileImage from "./assets/profile.png";
 import HeartImg from "./assets/heart.png";
 import {About} from './About';
@@ -10,7 +10,7 @@ import {Contact} from './Contact.jsx';
 import Home from './Home';
 import {Portfolio} from "./projects/Portfolio.jsx";
 import {Hire} from "./Hire.jsx";
-// import './projects/Portfolio.css'
+import { Element } from 'react-scroll'; // Import Element from react-scroll
 
 function Main() {
     const [likes, setLikes] = useState(0);
@@ -26,7 +26,21 @@ function Main() {
                 <Navbar2 />
             </div>
 
+            <Element name="home">
+                <Home />
+            </Element>
 
+            <Element name="about">
+                <About />
+            </Element>
+
+            <Element name="portfolio">
+                <Portfolio />
+            </Element>
+
+            <Element name="hire">
+                <Hire />
+            </Element>
 
             <div className="like">
                 <button onClick={counter}><img src={HeartImg}  /></button>
@@ -42,7 +56,7 @@ function App() {
             <Main /> {/* Render the Main component with its content */}
 
             <Routes>
-                <Route path="/" element={<Home />} /> // Using the Home component
+                {/*<Route path="/" element={<Home />} /> // Using the Home component*/}
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Portfolio />} />
                 <Route path="/hire" element={<Hire />} />

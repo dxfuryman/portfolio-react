@@ -1,6 +1,8 @@
 import React from "react";
 import './nav.css'; // Keep your CSS import
-import { Link } from 'react-router-dom'; // Import Link
+import { NavLink } from 'react-router-dom'; // Import NavLink
+import { Link } from 'react-scroll';
+
 
 function Navbar() {
     return (
@@ -15,16 +17,15 @@ function Navbar2() {
         <div className="btn-nav">
             <div className="btn-nav-main">
                 <nav>
-                    <Link to="/"><button className={"btn"}><h2>Home</h2></button></Link>
-                    <Link to="/about"><button className={"btn"}><h2>About</h2></button></Link>
-                    <Link to="/contact"><button className={"btn"}><h2>Portfolio</h2></button></Link>
+                    <NavLink to="/" activeClassName="active"><button className={"btn"}><h2>Home</h2></button></NavLink>
+                    <NavLink to="/about" activeClassName="active"><button className={"btn"}><h2>About</h2></button></NavLink>
+                    <NavLink to="/contact" activeClassName="active"><button className={"btn"}><h2>Portfolio</h2></button></NavLink>
                 </nav>
             </div>
             <nav>
-            <div className="special">
-                <Link to="/hire"><button className="btn2"><h2>Hire me </h2></button></Link>
-
-            </div>
+                <div className="special">
+                    <NavLink to="/hire" activeClassName="active"><button className="btn2"><h2>Hire me </h2></button></NavLink>
+                </div>
             </nav>
         </div>
     );

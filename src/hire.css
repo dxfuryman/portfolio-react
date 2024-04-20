@@ -11,13 +11,14 @@ body {
     /*background-repeat: repeat;*/
     /*background: linear-gradient(#141e30, #243b55);*/
 }
-.con-me{
-    position: absolute;
-    top: 15%;
-    left: 22%;
+.con-me {
+    position: relative;
+    margin-top: 20px;   /* Adjust as needed */
+    left: 4%;
     opacity: 80%;
+    text-align: center; /* Center the title */
 }
-.con-me h1{
+.con-me h1 {
     font-size: 80px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
@@ -29,15 +30,22 @@ body {
     font-style: normal;
     color: white;
 }
-
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    left: 4%;
+    margin-top: -5%;
+}
 .login-box {
-    position: absolute;
-    top: 60%;
-    right: 0;
-    width: 500px;
-    height:700px;
+    position: relative;      /* Changed from absolute */
+    width: 80%;              /* Responsive width */
+    max-width: 500px;        /* Sets a maximum size */
+    height: auto;            /* Allow height to adjust to content */
     padding: 40px;
-    transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -226,5 +234,106 @@ body {
     }
     50%,100% {
         bottom: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .con-me {
+        top: 10%;
+        left: 5%;
+    }
+
+    .con-me h1 {
+        font-size: 40px;
+    }
+
+    .login-box {
+        top: 50%;
+        right: 0;
+        width: 90vw; /* Use viewport width units for responsiveness */
+        height: auto; /* Make the height auto for better responsiveness */
+        padding: 20px;
+    }
+    @media (max-width: 1024px) {
+        .login-box {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .login-box {
+            width: 95%;
+        }
+        .con-me h1 {
+            font-size: 40px;  /* Smaller title on smaller screens */
+        }
+    }
+
+    .login-box .user-box input {
+        font-size: 18px;
+    }
+
+    .login-box .user-box label {
+        font-size: 13px;
+    }
+
+    .login-box form a {
+        font-size: 12px;
+    }
+
+    .info-txt {
+        font-size: 12px;
+    }
+
+    .info-txt img {
+        height: 15px;
+    }
+
+    .info-svg {
+        height: 15px;
+        max-width: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .con-me {
+        top: 10%;
+        left: 10%;
+    }
+
+    .con-me h1 {
+        font-size: 60px;
+    }
+
+    .login-box {
+        top: 50%;
+        right: 0;
+        width: 70vw; /* Use viewport width units for responsiveness */
+        height: auto; /* Make the height auto for better responsiveness */
+        padding: 30px;
+    }
+
+    .login-box .user-box input {
+        font-size: 24px;
+    }
+
+    .login-box .user-box label {
+        font-size: 18px;
+    }
+
+    .login-box form a {
+        font-size: 14px;
+    }
+
+    .info-txt {
+        font-size: 14px;
+    }
+
+    .info-txt img {
+        height: 20px;
+    }
+
+    .info-svg {
+        height: 20px;
+        max-width: 20px;
     }
 }

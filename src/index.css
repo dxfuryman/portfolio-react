@@ -13,12 +13,13 @@
   align-items: flex-start; /* Align items to the top */
 }
 .profile{
+  visibility: hidden;
   display: flex;
   justify-content: center;
   /*position: absolute;*/
-  right: 0;
-  top: 10%;
-  position: fixed;
+  right: -25%;
+  top: 15%;
+  position: relative;
 }
 .profile img{
   height: 850px;
@@ -69,8 +70,11 @@
   display: flex;       /* Use flexbox for centering */
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center vertically */
-  position: relative;
-  top: -20%;
+  position: absolute;
+  /*top: -20%;*/
+  top: 0;
+  left: 5%;
+  /*margin-top: -5%;*/
 }
 #FD:hover{
   font-family: "Lilita One", sans-serif;
@@ -85,8 +89,9 @@
   /*font-weight: 400;*/
   /*font-style: normal;*/
   font-size: 60px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   position: relative;
+  left: 0;
 
   /* Add more styles as desired */
 }

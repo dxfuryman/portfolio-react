@@ -101,3 +101,55 @@ p {
     0% { background-position: 0 50%; }
     100% { background-position: 100% 50%; }
 }
+@media (max-width: 600px) {
+    .btn-nav {
+        top: 1%;
+        right: 1%;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn2 {
+        height: 40px;
+        width: 120px;
+    }
+
+    .btn2 h2 {
+        font-size: small;
+    }
+
+    #name {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .btn-nav {
+        top: 2%;
+        right: 2%;
+    }
+
+    .btn {
+        font-size: 25px;
+        /*display: block;*/
+    }
+
+    .btn2 {
+        height: 50px;
+        width: 140px;
+    }
+
+    .btn2 h2 {
+        font-size: medium;
+    }
+
+    #name {
+        font-size: xx-large;
+    }
+}
+.active button h2{
+    color: coral; /* Change this to your preferred color */
+}
+
