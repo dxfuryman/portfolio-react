@@ -2,36 +2,45 @@ import React from "react";
 import './nav.css'; // Keep your CSS import
 import { NavLink } from 'react-router-dom'; // Import NavLink
 import { Link } from 'react-scroll';
+import {useState} from "react";
 
 
 function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <p>
+        <>
             <span id="name">Vineet Somani</span>
-        </p>
+
+            {/* Hamburger Button */}
+            <div className="hamburger-menu" onClick={toggleMenu}>
+                <div className={isMenuOpen ? "line line-1-open" : "line line-1"}></div>
+                <div className={isMenuOpen ? "line line-2-open" : "line line-2"}></div>
+                <div className={isMenuOpen ? "line line-3-open" : "line line-3"}></div>
+            </div>
+        </>
     );
 }
 
 function Navbar2() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div className="btn-nav">
-            <div className="btn-nav-main">
+            {/* Main Navigation (Hidden when menu is closed) */}
+            <div className={`btn-nav-main ${isMenuOpen ? 'open' : ''}`}>
                 <nav>
                     <NavLink to="/" activeClassName="active"><button className={"btn"}><h2>Home</h2></button></NavLink>
                     <NavLink to="/about" activeClassName="active"><button className={"btn"}><h2>About</h2></button></NavLink>
                     <NavLink to="/contact" activeClassName="active"><button className={"btn"}><h2>Portfolio</h2></button></NavLink>
                 </nav>
-                {/*<nav>*/}
-                {/*    <ul>*/}
-                {/*    <li  activeClassName="active"><button className={"btn"}><a><h2>Home</h2></a></button></li>*/}
-                {/*    <li  activeClassName="active"><button className={"btn"}><h2>About</h2></button></li>*/}
-                {/*    <li activeClassName="active"><button className={"btn"}><h2>Portfolio</h2></button></li>*/}
-                {/*    </ul>*/}
-                {/*</nav>*/}
             </div>
             <nav>
                 <div className="special">
-                    <NavLink to="/hire" activeClassName="active"><button className="btn2"><h2>Hire me </h2></button></NavLink>
+                    {/* Hire Me Button */}
                 </div>
             </nav>
         </div>

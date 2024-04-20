@@ -152,4 +152,47 @@ p {
 .active button h2{
     color: coral; /* Change this to your preferred color */
 }
+.hamburger-menu {
+    display: none; /* Hide on larger screens */
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
 
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #bcbcb6;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.line-1-open { transform: rotate(45deg) translate(6px, 6px); }
+.line-2-open { opacity: 0; }
+.line-3-open { transform: rotate(-45deg) translate(6px, -6px); }
+
+/* Navigation */
+.btn-nav .btn-nav-main {
+    display: flex;
+    opacity: 0;          /* Initially hidden */
+    visibility: hidden;  /* Initially hidden */
+    transition: all 0.3s ease;
+}
+
+.btn-nav .btn-nav-main.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Show hamburger menu on smaller screens */
+    .btn-nav .btn-nav-main {
+        display: none; /* Hide main navigation by default */
+    }
+}
