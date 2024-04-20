@@ -29,6 +29,10 @@ export const Hire = () => {
                         <input type="number" name="Phone number" required />
                         <label>Phone no</label>
                     </div>
+                    <div className="user-box">
+                        <input type="text" name="message" required />
+                        <label>message</label>
+                    </div>
                     {/*<Textarea />*/}
                     <a href="#">
                         <button type="submit">
