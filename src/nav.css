@@ -187,12 +187,8 @@ p {
 
 /* Media Queries */
 @media (max-width: 600px) {
-    .hamburger-menu {
-        display: block;
-    }
-
-    /* Show hamburger menu on smaller screens */
+    .hamburger-menu { display: block; } /* Show hamburger menu on smaller screens */
     .btn-nav .btn-nav-main {
-        display: none; /* Hide main navigation by default */
+        display: none;   /* Hide main navigation by default */
     }
 }
