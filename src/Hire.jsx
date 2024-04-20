@@ -1,6 +1,6 @@
 import React from "react";
 import './hire.css';
-import { Textarea } from "@/components/ui/textarea"
+// import { Textarea } from "@/components/ui/textarea"
 
 // Import your SVG icons
 import MailIcon from '../src/assets/mail.png'; // Replace with your actual path
@@ -29,7 +29,7 @@ export const Hire = () => {
                         <input type="number" name="Phone number" required />
                         <label>Phone no</label>
                     </div>
-                    <Textarea />
+                    {/*<Textarea />*/}
                     <a href="#">
                         <button type="submit">
                             <span></span>
