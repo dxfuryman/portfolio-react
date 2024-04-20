@@ -38,7 +38,7 @@ body {
     height: 100vh;
     width: 100%;
     left: 4%;
-    margin-top: -5%;
+    margin-top: -3%;
 }
 .login-box {
     position: relative;      /* Changed from absolute */

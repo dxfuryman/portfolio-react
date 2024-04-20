@@ -21,6 +21,13 @@ function Navbar2() {
                     <NavLink to="/about" activeClassName="active"><button className={"btn"}><h2>About</h2></button></NavLink>
                     <NavLink to="/contact" activeClassName="active"><button className={"btn"}><h2>Portfolio</h2></button></NavLink>
                 </nav>
+                {/*<nav>*/}
+                {/*    <ul>*/}
+                {/*    <li  activeClassName="active"><button className={"btn"}><a><h2>Home</h2></a></button></li>*/}
+                {/*    <li  activeClassName="active"><button className={"btn"}><h2>About</h2></button></li>*/}
+                {/*    <li activeClassName="active"><button className={"btn"}><h2>Portfolio</h2></button></li>*/}
+                {/*    </ul>*/}
+                {/*</nav>*/}
             </div>
             <nav>
                 <div className="special">
