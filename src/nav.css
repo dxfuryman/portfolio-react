@@ -10,7 +10,7 @@ body {
 }
 .btn-nav{
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 3%;
     right: 3%;
     align-items: center;
@@ -175,8 +175,7 @@ p {
 /* Navigation */
 .btn-nav .btn-nav-main {
     display: flex;
-    opacity: 0;          /* Initially hidden */
-    visibility: hidden;  /* Initially hidden */
+     /* Initially hidden */
     transition: all 0.3s ease;
 }
 

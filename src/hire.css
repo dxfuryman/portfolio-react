@@ -161,10 +161,12 @@ body {
     /*margin-right: 10px;*/
 }
 .info-txt img:hover{
-    background-color: white;
+    background-color: lightgray;
 }
-.info-txt img:hover{
+.info-txt img{
     background-color: white;
+    border-radius: 50%;
+    height: 40px;
 }
 .info-svg{
 
@@ -178,7 +180,12 @@ body {
     /*justify-content: space-between;*/
 }
 .info-svg img:hover{
+    background-color: lightgrey;
+}
+.info-svg img{
     background-color: white;
+    border-radius: 50%;
+    height: 100%;
 }
 .login-box a span:nth-child(2) {
     top: -100%;

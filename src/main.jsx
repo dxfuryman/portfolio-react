@@ -1,16 +1,15 @@
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom/client';  // Updated import
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Navbar , Navbar2 } from "./nav.jsx"; // Import Navbar
+import { Navbar , Navbar2 } from "./nav.jsx";
 import ProfileImage from "./assets/profile.png";
 import HeartImg from "./assets/heart.png";
-import {About} from './About';
-import {Contact} from './Contact.jsx';
+import { About } from './About';
+import { Contact } from './Contact.jsx';
+import { Link, Element } from 'react-scroll';
 import Home from './Home';
-import {Portfolio} from "./projects/Portfolio.jsx";
-import {Hire} from "./Hire.jsx";
-import { Element } from 'react-scroll'; // Import Element from react-scroll
+import { Portfolio } from "./projects/Portfolio.jsx";
+import { Hire } from "./Hire.jsx";
 
 function Main() {
     const [likes, setLikes] = useState(0);
@@ -52,16 +51,7 @@ function Main() {
 
 function App() {
     return (
-        <Router>
-            <Main /> {/* Render the Main component with its content */}
-
-            <Routes>
-                {/*<Route path="/" element={<Home />} /> // Using the Home component*/}
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Portfolio />} />
-                <Route path="/hire" element={<Hire />} />
-            </Routes>
-        </Router>
+        <Main />
     );
 }
 
