@@ -17,12 +17,13 @@ body{
   align-items: flex-start; /* Align items to the top */
 }
 .profile{
-  visibility: hidden;
+  /*visibility: hidden;*/
   display: flex;
   justify-content: center;
   /*position: absolute;*/
+  z-index: -1;
   right: -25%;
-  top: 15%;
+  top: 25%;
   position: relative;
 }
 .profile img{

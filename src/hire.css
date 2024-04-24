@@ -155,13 +155,14 @@ body {
     font-size: 26px;
     color: white;
 }
-.info-txt img{
+.info-txt a img{
     height: 30px;
     /*margin: 10px;*/
     /*margin-right: 10px;*/
 }
 .info-txt img:hover{
     background-color: lightgray;
+    cursor: pointer;
 }
 .info-txt img{
     background-color: white;
