@@ -6,6 +6,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+  overflow-x: hidden;
+
+}
 
 .header {
   display: flex; /* Make it a flex container */
