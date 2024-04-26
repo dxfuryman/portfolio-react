@@ -4,7 +4,7 @@ import './index.css';
 import { Navbar , Navbar2 } from "./nav.jsx";
 import ProfileImage from "./assets/profile.png";
 import HeartImg from "./assets/heart.png";
-import {About, Tech} from './About';
+import {About, Tech, Tools} from './About';
 import { Contact } from './Contact.jsx';
 import { Link, Element } from 'react-scroll';
 import Home from './Home';
@@ -40,6 +40,7 @@ function Main() {
             <Element name="about">
                 <About />
                 <Tech />
+                <Tools />
             </Element>
 
             <Element name="portfolio">
