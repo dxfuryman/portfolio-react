@@ -81,6 +81,7 @@ p {
     margin: 0;
     font-size: xxx-large;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
+    z-index: 2;
 
     /* Clip Background Image */
 
