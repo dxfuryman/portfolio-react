@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "./assets/profile.png";
+import react from "./logo/furydom logo.jpg"
 export const About = () => {
     return (
         <>
@@ -9,6 +10,25 @@ export const About = () => {
                 </p>
                 <img src={Profile} alt="My profile picture" />
             </div>
+        </>
+    )
+}
+export const Tech = () => {
+    return(
+        <><div className="tech-container">
+            <h1>Tech Stack</h1>
+        <div className="tech-stack">
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+            <img src={react} alt="react-logo"/>
+        </div>
+        </div>
         </>
     )
 }

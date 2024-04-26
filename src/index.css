@@ -47,6 +47,7 @@ body{
   height: 650px;
   margin-left: 25%;
   border-radius: 30%;
+  /*border: 1px solid white;*/
   /*width: 40%;*/
   position: inherit;
 }
@@ -116,6 +117,33 @@ body{
 
   /*margin-top: 35%;*/
 }
+.tech-container{
+  /*border: 1px solid white;*/
+  width: 100%;
+  height: 500px;
+  margin-top: 10%;
+
+}
+.tech-container h1{
+  font-size: 70px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: orange;
+}
+.tech-stack{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30%
+}
+.tech-stack img{
+  height: 100px;
+}
 
 #FD:hover{
   font-family: "Lilita One", sans-serif;
@@ -181,7 +209,7 @@ body{
 
 
 .pj-wrap {
-  z-index: -1;
+  /*z-index: -1;*/
   width: 100%;
   display: inline-grid;  /* Create an inline grid */
   grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -202,6 +230,13 @@ body{
   box-shadow: 2px 2px 6px rgba(0,0,0, 0.3);
   padding: 20px;
   text-align: left;
+  /*border: 2px solid white;*/
+}
+.pj-wrap button:hover{
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  letter-spacing: 4px;
 }
 
 /* Responsive Adjustment */
@@ -217,7 +252,7 @@ body{
   font-style: normal;
   font-size: 30px;
   margin-left: 30%;
-
+  /*color: white;*/
 }
 @media (max-width: 600px) {
   .profile img {
