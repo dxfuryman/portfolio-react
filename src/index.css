@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jersey+20&family=Permanent+Marker&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +11,19 @@ body{
   overflow-x: hidden;
 
 }
+.video-background {
+  position: fixed;      /* Cover entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;          /* Full width */
+  height: 100%;         /* Full height */
+  object-fit: cover;    /* Maintain aspect ratio */
+  z-index: -1;          /* Place behind other content */
+}
 
 .header {
+  width: 100%;
+  background-blend-mode: soft-light;
   display: flex; /* Make it a flex container */
   justify-content: space-between; /* Distribute items with space */
   align-items: flex-start; /* Align items to the top */
@@ -22,14 +34,33 @@ body{
   justify-content: center;
   /*position: absolute;*/
   z-index: -1;
-  right: -25%;
+  /*right: -25%;*/
   top: 25%;
   position: relative;
-  margin-top: 3%;
+  margin-top: 18%;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+
 }
 .profile img{
-  height: 850px;
-  /*border-radius: 50%;*/
+  height: 650px;
+  margin-left: 25%;
+  border-radius: 30%;
+  /*width: 40%;*/
+  position: inherit;
+}
+.profile p{
+  color: lightgray;
+  position: inherit;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight:20;
+  font-style: normal;
+  font-size: 4vh;
+  width: 100%;
+  margin-top: 5%;
+  left: 7%;
 }
 .like {
   display:none;  /*ye maine bus kuch time ke liye hide kiya hai likes counter app hai ye */
@@ -71,17 +102,21 @@ body{
   cursor: pointer;
 }
 .home-container {
-  text-align: center;  /* Center content horizontally */
+  height: 100%;
+  /*text-align: center;  !* Center content horizontally *!*/
   min-height: 100vh;   /* Make container take full viewport height */
   display: flex;       /* Use flexbox for centering */
-  flex-direction: column; /* Align items vertically */
-  justify-content: center; /* Center vertically */
-  position: absolute;
-  /*top: -20%;*/
-  top: 0;
+  /*flex-direction: column; !* Align items vertically *!*/
+  /*justify-content: center; !* Center vertically *!*/
+  position: relative;
+  align-items: center;
+  width: 100%;
+  /*top: 0;*/
   left: 5%;
-  /*margin-top: -5%;*/
+
+  /*margin-top: 35%;*/
 }
+
 #FD:hover{
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
@@ -133,19 +168,30 @@ body{
 
 
 .main {
+  z-index: -1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;      /* Adjust spacing from navbar */
+  margin-top: 10%;
+  justify-content: center;/* Adjust spacing from navbar */
+
 }
 
+
+
 .pj-wrap {
+  z-index: -1;
+  width: 100%;
   display: inline-grid;  /* Create an inline grid */
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   column-gap: 100px;
-  row-gap: 170px;
-  margin-top: 30px;
-  margin-left: 10%;
+  row-gap: 10%;
+  /*margin-top: 30px;*/
+  position: relative;
+
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .pj-wrap button {

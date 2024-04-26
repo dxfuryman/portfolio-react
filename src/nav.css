@@ -14,6 +14,7 @@ body {
     top: 3%;
     right: 3%;
     align-items: center;
+    opacity: 150%;
 }
 .btn{
     background-color: transparent;
@@ -68,6 +69,7 @@ p {
 }
 
 #name{
+
     /*font-size: 10px;*/
     justify-content: start;
     align-items: start;

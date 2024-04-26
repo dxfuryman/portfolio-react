@@ -12,7 +12,7 @@ import InstagramIcon from '../src/assets/insta.png'; // Replace with your actual
 
 export const Hire = () => {
     return (
-        <>
+        <><div className="Hire-box">
             <div className="con-me"><h1>Contact me</h1></div>
             <div className="login-container">
             <div className="login-box">
@@ -59,6 +59,7 @@ export const Hire = () => {
                 </div>
             </div>
             </div>
+        </div>
         </>
     );
 };
