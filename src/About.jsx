@@ -54,7 +54,7 @@ export const Tech = () => {
         <><div className="tech-container">
             <h1>Tech Stack</h1>
             <div className="tech-stack">
-                <img src={github} alt="react-logo"/>
+                <img src={react} alt="react-logo"/>
                 <img src={js} alt="js-logo"/>
                 <img src={git} alt="react-logo"/>
                 <img src={redux} alt="react-logo"/>
