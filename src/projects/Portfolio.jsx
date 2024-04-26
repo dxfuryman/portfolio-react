@@ -5,6 +5,8 @@ import prj3 from "./ProjectSnapshots/img_3.png"
 import prj4 from "./ProjectSnapshots/img_4.png"
 import prj5 from "./ProjectSnapshots/img_6.png"
 import prj6 from "./ProjectSnapshots/img.png"
+import prj8 from "./ProjectSnapshots/img_5.png"
+import prj7 from "./ProjectSnapshots/img_7.png"
 
 export const Portfolio = () => {
     return (
@@ -42,6 +44,14 @@ export const Portfolio = () => {
                     <button id={"btn-1"}>
                         <a href="https://dxfuryman.github.io/simon-game/" target={"_blank"}><img src={prj6}/></a>
                         <label>Simon Game</label>
+                    </button>
+                    <button id={"btn-1"}>
+                        <a href="https://dxfuryman.github.io/dog-meeting-site/" target={"_blank"}><img src={prj7}/></a>
+                        <label>Dog Pet Shop</label>
+                    </button>
+                    <button id={"btn-1"}>
+                        <a href="https://investment-calculator-gilt.vercel.app/" target={"_blank"}><img src={prj8}/></a>
+                        <label>Investment Calculator</label>
                     </button>
                     {/* Add more buttons as needed */}
                 </div>
