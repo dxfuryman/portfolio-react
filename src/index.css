@@ -103,6 +103,10 @@ body{
   cursor: pointer;
 }
 .home-container {
+  /*border: 2px solid white;*/
+  justify-content: center;
+  background-image: url("https://plus.unsplash.com/premium_photo-1667482654587-e7091bb42e0c?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /*opacity: 30%;*/
   height: 100%;
   /*text-align: center;  !* Center content horizontally *!*/
   min-height: 100vh;   /* Make container take full viewport height */
@@ -112,8 +116,9 @@ body{
   position: relative;
   align-items: center;
   width: 100%;
+  margin-top: 7%;
   /*top: 0;*/
-  left: 5%;
+  /*left: 5%;*/
 
   /*margin-top: 35%;*/
 }
@@ -154,25 +159,36 @@ body{
 }
 .home-title {
   color: white;
+  width: 100%;
+
+  height: 920px;
   /*font-family: "Satisfy", cursive;*/
   /*font-weight: 400;*/
   /*font-style: normal;*/
-  font-size: 60px;
+  font-size: 160px;
   /*margin-left: 50px;*/
   position: relative;
   left: 0;
 
+  /*opacity: 550%;*/
+  /*border: 1px solid white;*/
+  /*top: 100%;*/
+  backdrop-filter: blur(8px);
+
   /* Add more styles as desired */
+}
+.home-title h1{
+  margin-top: 20%;
 }
 #FD{
   color: orange;
   font-family: "Satisfy", cursive;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 #yes{
   font-family: "Anton", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal
 }
 #ttl{
@@ -189,7 +205,7 @@ body{
   font-size: 60px;
   color: white;
   font-family: "Bungee Spice", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 
 }

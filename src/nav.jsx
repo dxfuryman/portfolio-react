@@ -17,7 +17,7 @@ function Navbar2() {
         <div className="btn-nav">
             <div className="btn-nav-main">
                 <nav>
-                    <Link to="home" smooth={true} duration={500}><button className={"btn"}><h2>Home</h2></button></Link>
+                    <Link to="header" smooth={true} duration={500}><button className={"btn"}><h2>Home</h2></button></Link>
                     <Link to="about" smooth={true} duration={500}><button className={"btn"}><h2>About</h2></button></Link>
                     <Link to="portfolio" smooth={true} duration={500}><button className={"btn"}><h2>Portfolio</h2></button></Link>
                 </nav>

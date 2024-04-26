@@ -15,6 +15,7 @@ body {
     right: 3%;
     align-items: center;
     opacity: 150%;
+    z-index: 2;
 }
 .btn{
     background-color: transparent;
