@@ -46,7 +46,7 @@ export const Hire = () => {
                 </form>
                 <div className="info">
                     <div className="info-txt">
-                        <img src={MailIcon} alt="Mail Icon" /> vineetsomani11@gmail.com
+                        <img src={MailIcon} alt="Mail Icon" /> vineetsomani61@gmail.com
                         <br/>
                         <img src={PhoneIcon} alt="Phone Icon" /> 9571410883
                     </div>
